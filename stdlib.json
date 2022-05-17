@@ -1,0 +1,52 @@
+{
+  "name": "rejj/dc-bot",
+  "timeout": 10000,
+  "connector": false,
+  "events": {
+    "functions/events/discord/message/create/prefix/stop.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "!stop"
+      }
+    },
+    "functions/events/discord/message/create/prefix/pause.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "!pause"
+      }
+    },
+    "functions/events/discord/message/create/prefix/resume.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "!resume"
+      }
+    },
+    "functions/events/discord/message/create/prefix/next.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "!next"
+      }
+    },
+    "functions/events/discord/bot/playback/finished.js": {
+      "name": "discord.bot.playback.finished"
+    },
+    "functions/events/discord/message/create/prefix/status.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "!status"
+      }
+    },
+    "functions/events/discord/message/create/prefix/help.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "!help"
+      }
+    },
+    "functions/events/discord/message/create/prefix/play.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "!play"
+      }
+    }
+  }
+}
